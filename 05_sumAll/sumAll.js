@@ -1,6 +1,13 @@
-const sumAll = function() {
+const sumAll = function (min, max) {
 
-};
+  
 
-// Do not edit below this line
-module.exports = sumAll;
+  if(min < 0 || max < 0){
+    return "ERROR";
+  };
+
+  if(!Number.isInteger(min) || !Number.isInteger(max)) {
+    return "ERROR";
+  };
+  module.exports = sumAll;
+}
